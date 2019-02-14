@@ -8,24 +8,24 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f7f5f0;
+  color: #e6f0ff;
+  background: url('images/rsz_boise.jpg') no-repeat center ;;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #99b3ff;
 }
 a:hover {
-  color: #6633ff;
+  color: #84e1e1;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgba(13,13,13,0.8);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +43,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #84e1e1;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -57,7 +57,6 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,33 +69,41 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
   transition: all .5s;
+  opacity: .6;
+  border: 2px solid #c3f8fff1;
+  border-style: inset;
+
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(15deg);
+  opacity: .9;
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: rgba(230,230,230,0.4);
+  color: #222;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(34,34,34,0.4);
+  color: #84e1e1;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background-image: linear-gradient(to right,rgba(57,57,57,0.8) ,#222);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+}
+.card li {
+  text-decoration: underline;
+  color: #ff9904;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -106,7 +113,6 @@ ul.skills {
   padding: 0;
   text-align: center;
 }
-
 .skills li {
   border-radius: 6px;
   display: inline-block;
@@ -118,6 +124,16 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+h2 {
+  color: #0399ff;
+  text-decoration: underline silver;
+}
+
+em {
+  text-decoration: underline;
+  color: #ff9904;
 }
 
 footer {
@@ -148,14 +164,8 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .9;
   transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
@@ -165,6 +175,9 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+.copyright {
+  color:#e6f0ff;
 }
 
 /* Styles for larger screens */
